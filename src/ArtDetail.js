@@ -13,6 +13,10 @@ export default function ArtDetail() {
     const url = "https://anectdk0df.execute-api.us-east-2.amazonaws.com"  
     console.log(`id: ${id}`)
 
+    // const submitBid = (number, bid) => {
+    //     fetch{}
+    // }
+
     useEffect(() => {
         fetch(`${url}/item/${id}`)
         .then(res => res.json())
@@ -53,10 +57,26 @@ export default function ArtDetail() {
                     <img className="art-image" src={item.image_src.S}></img>
                     <div className="price">
                         <p>TOP BID:</p>
-                        <p>$12.99</p>
+                        <p>{item.top_bid.S}</p>
                     </div>
                     <button ><span id="button-txt">SUBMIT BID</span></button>
                 </div>
+                {/* <div>
+                    <form onSubmit={}>
+                        <p className="bid-title">SUBMIT BID</p>
+
+                        <div className="form-info">
+                            <label for="phone"><b>Phone #</b></label>
+                            <input type="tel" placeholder="Ex. 6120000000" name="phone" required/>
+
+                            <label for="bid"><b>Bid Price</b></label>
+                            <input type="text" placeholder="$15" name="bid" required></input>
+                        </div>
+
+                        <button type="submit"><span id="button-txt">SUBMIT</span></button>
+                        <button type="submit"><span id="button-txt">CANCEL</span></button>
+                    </form>
+                </div> */}
             </div>
         )
 }

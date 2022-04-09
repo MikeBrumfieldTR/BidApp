@@ -68,3 +68,27 @@ p {
   font-size: 4vh;
   color: #E76F51;
 }
+
+.bid-title {
+  text-align: center;
+  font-size: 2vh;
+}
+
+form {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+label {
+  text-align: center;
+  font-size: 2vh;
+}
