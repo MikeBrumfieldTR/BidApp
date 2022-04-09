@@ -1,19 +1,26 @@
 import { useEffect, useState } from 'react'
+import { useNavigate } from "react-router-dom";
 import './menu.css'
 
-export default function Menu() {
+const routeChange = (route) =>{ 
+    // window.location.href = route
+  }
 
+export default function Menu() {
+    const navigate = useNavigate();
     return (
         <div className="menu-container">
             <div className="brand">
-                <p>ART BID</p>
+                <a href="/">
+                    <p>ART BID</p>
+                </a>
             </div>
             <div className="view-selector">
-                <a>
+                <a href="/">
                     <p className="view-item">ALL ARTWORK</p>
                 </a>
                 <a>
-                    <p className="view-item">YOUR BIDS</p>
+                    <p className="view-item">ALL BIDS</p>
                 </a>
             </div>
         </div>

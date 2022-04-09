@@ -10,14 +10,21 @@
     text-align: center;
 }
 
-.brand > p {
-    font-size: 4vw;
+.brand > a > p {
+    font-size: 4vh;
     color: #2A9D8F;
     font-weight: 550;
     width: 100%;
     letter-spacing: .1vw;
     font-family: nunito;
     margin: 2vh;
+    text-align: center;
+    text-decoration: none;
+}
+
+.brand > a {
+    width: 100%;
+    text-decoration: none;
 }
 
 .view-selector {
@@ -32,6 +39,7 @@
     width: 50%;
     margin-top: auto;
     margin-bottom: auto;
+    text-decoration: none;
 }
 
 .view-selector > a:hover {
@@ -40,7 +48,7 @@
 }
 
 .view-item {
-    font-size: 2vw;
+    font-size: 2vh;
     color: #2A9D8F;
     height: 100%;
     padding-top: 0;
