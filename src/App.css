@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: nunito;
+  src: url(NunitoSans-Regular.ttf);
+}
+
+p {
+  letter-spacing: .1vw;
+}
